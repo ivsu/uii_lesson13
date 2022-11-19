@@ -1,0 +1,45 @@
+INFO:     Will watch for changes in these directories: ['/content/lesson13/lesson_lib']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [400] using StatReload
+2022-11-19 11:49:28.177176: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+INFO:     Started server process [402]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:58828 - "GET /test HTTP/1.1" 200 OK
+DEBUG:lesson_lib.predict_number:Открыт файл изображения
+DEBUG:lesson_lib.predict_number:Перед обработкой изображения для lum 128
+DEBUG:lesson_lib.prepare_image:Начало обработки
+DEBUG:lesson_lib.prepare_image:Сконвертировано
+DEBUG:lesson_lib.predict_number:Изображение получено для lum 128
+DEBUG:lesson_lib.predict_number:Обработано изображение для lum 128
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 110ms/step
+DEBUG:lesson_lib.predict_number:Предсказание выполнено для lum 128
+DEBUG:lesson_lib.predict_number:Перед обработкой изображения для lum 160
+DEBUG:lesson_lib.prepare_image:Начало обработки
+DEBUG:lesson_lib.prepare_image:Сконвертировано
+DEBUG:lesson_lib.predict_number:Изображение получено для lum 160
+DEBUG:lesson_lib.predict_number:Обработано изображение для lum 160
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 15ms/step
+DEBUG:lesson_lib.predict_number:Предсказание выполнено для lum 160
+DEBUG:lesson_lib.predict_number:Перед обработкой изображения для lum 192
+DEBUG:lesson_lib.prepare_image:Начало обработки
+DEBUG:lesson_lib.prepare_image:Сконвертировано
+DEBUG:lesson_lib.predict_number:Изображение получено для lum 192
+DEBUG:lesson_lib.predict_number:Обработано изображение для lum 192
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 14ms/step
+DEBUG:lesson_lib.predict_number:Предсказание выполнено для lum 192
+DEBUG:lesson_lib.predict_number:Перед обработкой изображения для lum 224
+DEBUG:lesson_lib.prepare_image:Начало обработки
+DEBUG:lesson_lib.prepare_image:Сконвертировано
+DEBUG:lesson_lib.predict_number:Изображение получено для lum 224
+DEBUG:lesson_lib.predict_number:Обработано изображение для lum 224
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 17ms/step
+DEBUG:lesson_lib.predict_number:Предсказание выполнено для lum 224
+DEBUG:lesson_lib.predict_number:Перед конвертацией в Image
+DEBUG:lesson_lib.predict_number:Перед сохранением в BytesIO
+DEBUG:lesson_lib.predict_number:Перед получением значения bytes
+DEBUG:lesson_lib.predict_number:Перед возвратом результата: [5, 0.99493647]
+DEBUG:main:Перед MultipartEncoder
+DEBUG:main:content_type: multipart/form-data; boundary=d917f6e7df4d4bf1afc549a7c72b26a4
+test api message
+INFO:     127.0.0.1:58836 - "POST /predict HTTP/1.1" 200 OK

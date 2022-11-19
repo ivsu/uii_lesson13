@@ -1,2 +1,4 @@
-# uii_lesson13
-Lesson 13 home work
+# Описание проекта
+- project_file
+- docker
+- git
