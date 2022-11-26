@@ -1,0 +1,10 @@
+version: "3"
+services:
+  number_classifier_server:
+    # перезапуск контейнера, в случае сбоя
+    restart: always 
+    container_name: number_classifier_server
+    image: number_classifier_server
+    build: 
+      # создание образа из Dockerfile в текущем каталоге
+      context: . 

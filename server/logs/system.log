@@ -1,0 +1,39 @@
+2022-11-26 12:43:59,851 [DEBUG] lesson_lib.prepare_image prepare_image(25): Начало обработки
+2022-11-26 12:43:59,883 [DEBUG] lesson_lib.prepare_image prepare_image(33): Сконвертировано
+2022-11-26 12:44:00,382 [DEBUG] lesson_lib.prepare_image prepare_image(25): Начало обработки
+2022-11-26 12:44:00,397 [DEBUG] lesson_lib.prepare_image prepare_image(33): Сконвертировано
+2022-11-26 12:44:00,625 [DEBUG] lesson_lib.prepare_image prepare_image(25): Начало обработки
+2022-11-26 12:44:00,634 [DEBUG] lesson_lib.prepare_image prepare_image(33): Сконвертировано
+2022-11-26 12:44:00,856 [DEBUG] lesson_lib.prepare_image prepare_image(25): Начало обработки
+2022-11-26 12:44:00,865 [DEBUG] lesson_lib.prepare_image prepare_image(33): Сконвертировано
+2022-11-26 12:44:30,684 [DEBUG] lesson_lib.predict_number predict_number(24): Открыт файл изображения
+2022-11-26 12:44:30,685 [DEBUG] lesson_lib.predict_number predict_number(32): Перед обработкой изображения для lum 128
+2022-11-26 12:44:30,685 [DEBUG] lesson_lib.prepare_image prepare_image(25): Начало обработки
+2022-11-26 12:44:30,720 [DEBUG] lesson_lib.prepare_image prepare_image(33): Сконвертировано
+2022-11-26 12:44:30,807 [DEBUG] lesson_lib.predict_number predict_number(34): Изображение получено для lum 128
+2022-11-26 12:44:30,807 [DEBUG] lesson_lib.predict_number predict_number(36): Обработано изображение для lum 128
+2022-11-26 12:44:31,076 [DEBUG] lesson_lib.predict_number predict_number(41): Предсказание выполнено для lum 128
+2022-11-26 12:44:31,076 [DEBUG] lesson_lib.predict_number predict_number(32): Перед обработкой изображения для lum 160
+2022-11-26 12:44:31,076 [DEBUG] lesson_lib.prepare_image prepare_image(25): Начало обработки
+2022-11-26 12:44:31,080 [DEBUG] lesson_lib.prepare_image prepare_image(33): Сконвертировано
+2022-11-26 12:44:31,176 [DEBUG] lesson_lib.predict_number predict_number(34): Изображение получено для lum 160
+2022-11-26 12:44:31,177 [DEBUG] lesson_lib.predict_number predict_number(36): Обработано изображение для lum 160
+2022-11-26 12:44:31,264 [DEBUG] lesson_lib.predict_number predict_number(41): Предсказание выполнено для lum 160
+2022-11-26 12:44:31,264 [DEBUG] lesson_lib.predict_number predict_number(32): Перед обработкой изображения для lum 192
+2022-11-26 12:44:31,264 [DEBUG] lesson_lib.prepare_image prepare_image(25): Начало обработки
+2022-11-26 12:44:31,268 [DEBUG] lesson_lib.prepare_image prepare_image(33): Сконвертировано
+2022-11-26 12:44:31,302 [DEBUG] lesson_lib.predict_number predict_number(34): Изображение получено для lum 192
+2022-11-26 12:44:31,302 [DEBUG] lesson_lib.predict_number predict_number(36): Обработано изображение для lum 192
+2022-11-26 12:44:31,369 [DEBUG] lesson_lib.predict_number predict_number(41): Предсказание выполнено для lum 192
+2022-11-26 12:44:31,369 [DEBUG] lesson_lib.predict_number predict_number(32): Перед обработкой изображения для lum 224
+2022-11-26 12:44:31,369 [DEBUG] lesson_lib.prepare_image prepare_image(25): Начало обработки
+2022-11-26 12:44:31,373 [DEBUG] lesson_lib.prepare_image prepare_image(33): Сконвертировано
+2022-11-26 12:44:31,407 [DEBUG] lesson_lib.predict_number predict_number(34): Изображение получено для lum 224
+2022-11-26 12:44:31,407 [DEBUG] lesson_lib.predict_number predict_number(36): Обработано изображение для lum 224
+2022-11-26 12:44:31,489 [DEBUG] lesson_lib.predict_number predict_number(41): Предсказание выполнено для lum 224
+2022-11-26 12:44:31,489 [DEBUG] lesson_lib.predict_number predict_number(53): Перед конвертацией в Image
+2022-11-26 12:44:31,489 [DEBUG] lesson_lib.predict_number predict_number(59): Перед сохранением в BytesIO
+2022-11-26 12:44:31,490 [DEBUG] lesson_lib.predict_number predict_number(62): Перед получением значения bytes
+2022-11-26 12:44:31,490 [DEBUG] lesson_lib.predict_number predict_number(67): Перед возвратом результата: [5, 0.99493647]
+2022-11-26 12:44:31,490 [DEBUG] main create_file(34): Перед MultipartEncoder
+2022-11-26 12:44:31,491 [DEBUG] main create_file(41): content_type: multipart/form-data; boundary=3eff6ab9c73045bc94487afb971c1eab
