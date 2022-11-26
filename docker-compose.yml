@@ -5,6 +5,5 @@ services:
     restart: always 
     container_name: number_classifier_server
     image: number_classifier_server
-    build: 
-      # создание образа из Dockerfile в текущем каталоге
-      context: . 
+    # создание образа из Dockerfile из каталога сервера
+    build: ./server
