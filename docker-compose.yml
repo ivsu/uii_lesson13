@@ -7,3 +7,6 @@ services:
     image: number_classifier_server
     # создание образа из Dockerfile из каталога сервера
     build: ./server
+    # [порт компьютера]:[порт контейнера]
+    ports:
+      - 80:8000    
