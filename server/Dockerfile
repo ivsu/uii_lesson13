@@ -22,4 +22,5 @@ ADD ./model/model_mnist.h5 /lesson13/model/
 # WORKDIR /lesson13/
 
 ENV PYTHONUNBUFFERED=1
-CMD [ "python3.7", "./main.py" ]
+#CMD [ "python3.7", "./main.py" ]
+CMD [ "nohup", "uvicorn main:app --reload --reload-dir ./lesson_lib/ &" ]
