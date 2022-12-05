@@ -6,7 +6,7 @@ ADD requirements.txt /
 RUN pip install -r  requirements.txt
 
 # установка веб-сервера
-RUN sudo apt install unicorn
+#RUN sudo apt install unicorn
 
 ADD main.py /
 ADD lesson_env.py /
