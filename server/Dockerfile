@@ -5,6 +5,9 @@ FROM python:3.7
 ADD requirements.txt /
 RUN pip install -r  requirements.txt
 
+# установка веб-сервера
+RUN sudo apt install unicorn
+
 ADD main.py /
 ADD lesson_env.py /
 
@@ -23,4 +26,5 @@ ADD ./model/model_mnist.h5 /lesson13/model/
 
 ENV PYTHONUNBUFFERED=1
 #CMD [ "python3.7", "./main.py" ]
-CMD [ "nohup uvicorn", "main:app", "--reload",  "--reload-dir ./lesson_lib/", "&" ]
+#CMD [ "nohup uvicorn", "main:app", "--reload",  "--reload-dir ./lesson_lib/", "&" ]
+CMD ["sh", "start.sh"]
