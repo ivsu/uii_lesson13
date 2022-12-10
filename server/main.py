@@ -1,3 +1,5 @@
+#  загрузка переменных окружения
+import lesson_env 
 
 # модуль логгирования
 from lesson_lib import logger
