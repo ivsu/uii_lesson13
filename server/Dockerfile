@@ -5,7 +5,7 @@ FROM python:3.7
 RUN mkdir -p /home/lesson13
 WORKDIR "/home/lesson13"
 # копирование файло проекта; можно сделать сразу из репозитория RUN git clone ...
-ADD *.py .
+ADD *.py ./
 # ADD lesson_env.py .
 # модули проекта
 RUN mkdir lesson_lib
