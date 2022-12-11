@@ -1,20 +1,25 @@
 # базовый образ
 FROM python:3.7
 
-# рабочая папка проекта
-RUN mkdir -p /home/lesson13
+# клонируем файлы проекта из репозитория
+RUN git clone https://git@github.com/ivsu/uii_lesson13 /home/lesson13
 WORKDIR "/home/lesson13"
+
+# рабочая папка проекта
+# RUN mkdir -p /home/lesson13
+# WORKDIR "/home/lesson13"
 # копирование файло проекта; можно сделать сразу из репозитория RUN git clone ...
-ADD *.py ./
+
+# ADD *.py ./
 # ADD lesson_env.py .
 # модули проекта
-RUN mkdir lesson_lib
-ADD ./lesson_lib/ ./lesson_lib/
+# RUN mkdir lesson_lib
+# ADD ./lesson_lib/ ./lesson_lib/
 # папка для модели и копирование модели
-RUN mkdir model
-ADD ./model/model_mnist.h5 ./model/
+# RUN mkdir model
+# ADD ./model/model_mnist.h5 ./model/
 # папка для логов
-RUN mkdir logs
+# RUN mkdir logs
 
 # установка зависимостей
 ADD requirements.txt ./
