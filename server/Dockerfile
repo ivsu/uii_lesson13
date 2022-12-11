@@ -20,15 +20,6 @@ RUN mkdir logs
 ADD requirements.txt ./
 RUN pip install -r requirements.txt
 
-# ADD ./lesson_lib/__init__.py ./lesson_lib/
-# ADD ./lesson_lib/logger.py ./lesson_lib/
-# ADD ./lesson_lib/predict_number.py ./lesson_lib/
-# ADD ./lesson_lib/prepare_image.py ./lesson_lib/
-
-# скрипт запуска
-#ADD start.sh ./
-#RUN chmod +x start.sh
-
 # установка net-tools
 RUN apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y \
@@ -38,4 +29,4 @@ RUN apt-get update \
 
 ENV PYTHONUNBUFFERED=1
 EXPOSE 8000
-CMD [ "uvicorn", "main:app", "--reload",  "--reload-dir", "./lesson_lib/", "--host", "0.0.0.0" ]
+ENTRYPOINT [ "uvicorn", "main:app", "--reload",  "--reload-dir", "./lesson_lib/", "--host", "0.0.0.0" ]
