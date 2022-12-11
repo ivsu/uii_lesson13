@@ -9,10 +9,9 @@ WORKDIR "/home/lesson13/server"
 ADD requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# установка net-tools
+# установка net-tools (для отладки)
 RUN apt-get update \
-  && DEBIAN_FRONTEND=noninteractive apt-get install -y \
-    net-tools \
+  && DEBIAN_FRONTEND=noninteractive apt-get install -y net-tools \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
