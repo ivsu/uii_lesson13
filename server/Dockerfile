@@ -23,7 +23,8 @@ WORKDIR "/home/lesson13/server"
 
 # установка зависимостей
 ADD requirements.txt ./
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
 
 # установка net-tools
 RUN apt-get update \
