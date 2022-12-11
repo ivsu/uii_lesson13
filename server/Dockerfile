@@ -2,8 +2,8 @@
 FROM python:3.7
 
 # клонируем файлы проекта из репозитория
-RUN git clone https://git@github.com/ivsu/uii_lesson13/server/ /home/lesson13/
-WORKDIR "/home/lesson13"
+RUN git clone https://git@github.com/ivsu/uii_lesson13 /home/lesson13/
+WORKDIR "/home/lesson13/server"
 
 # рабочая папка проекта
 # RUN mkdir -p /home/lesson13
