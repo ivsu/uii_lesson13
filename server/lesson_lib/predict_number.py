@@ -11,7 +11,6 @@ from PIL import Image
 import sys, os
 
 # инициализация модели
-# MODEL_PATH = env.FOLDER_MODEL + env.MODEL_FILE
 MODEL_PATH = os.environ.get('FOLDER_MODEL') + os.environ.get('MODEL_FILE')
 model = load_model(MODEL_PATH)
 
@@ -27,10 +26,10 @@ def predict_number(image_file):
         imgs = []
         result = []
         # будем использовать различный порог удаления шумов с изображения
-        for lum_threshold in [128, 160, 192, 224, 232, 240, 248]:
+        for lum_threshold in [128, 160, 192, 224, 232, 240, 248, 252]:
             # получим значимую часть изображения
             log.debug(f'Перед обработкой изображения для lum {lum_threshold}')
-            img = prepare_image(img_src, size=28, lum_threshold=lum_threshold, verbose=0) #, trace=trace)
+            img = prepare_image(img_src, size=28, lum_threshold=lum_threshold, verbose=0)
             log.debug(f'Изображение получено для lum {lum_threshold}')
             imgs.append(img)
             log.debug(f'Обработано изображение для lum {lum_threshold}')

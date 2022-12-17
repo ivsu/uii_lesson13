@@ -19,7 +19,6 @@ import sys
 
 log = logger.get(__name__)    
 
-# def prepare_image(img, size, lum_threshold, log, verbose=0):
 def prepare_image(img, size, lum_threshold, verbose=0):
 
     log.debug(f'Начало обработки')
