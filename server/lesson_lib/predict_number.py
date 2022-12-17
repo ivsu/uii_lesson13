@@ -27,7 +27,7 @@ def predict_number(image_file):
         imgs = []
         result = []
         # будем использовать различный порог удаления шумов с изображения
-        for lum_threshold in [128, 160, 192, 224]:
+        for lum_threshold in [128, 160, 192, 224, 232, 240, 248]:
             # получим значимую часть изображения
             log.debug(f'Перед обработкой изображения для lum {lum_threshold}')
             img = prepare_image(img_src, size=28, lum_threshold=lum_threshold, verbose=0) #, trace=trace)
